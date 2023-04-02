@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<style>@import url(main.css);</style>
+<html class="background_color">
+    <head>
+        <title> Sign up </title>
+    </head>
+
+    <body>
+        <h1>회원가입</h1><br>
+        <input type="button" value="로그인" onClick="location.href='file:///C:/Users/82103/Documents/%EC%97%B0%EC%84%B8%EB%8C%80/2-1%20%EC%9D%B8%ED%84%B0%EB%84%B7%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EA%B3%BC%EC%A0%9C/assignment02/login.html'">
+         <input type="button" value="회원가입" onClick="location.href='file:///C:/Users/82103/Documents/%EC%97%B0%EC%84%B8%EB%8C%80/2-1%20%EC%9D%B8%ED%84%B0%EB%84%B7%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EA%B3%BC%EC%A0%9C/assignment02/signup.html'"> 
+
+        <form method="Get" action="https://wwww.example.com" >
+
+            <div class="middle_sorting_in_signup">
+                <label> 아이디 <br>
+                <input type="text" name="ID"  required="required" autocomplete="on" autofocus class="box"></label>
+            </div>
+
+            <div>
+                <label>비밀번호<br>
+                <input type="password" name="Password" required="required" autocomplete="on" class="box"></label>
+            </div>
+
+            <div>
+                <label> 이름<br>
+                <input type="text" name="st_name" placeholder="홍길동" required="required" autocomplete="on" class="box"></label>
+            </div>
+            
+            <div>
+                <label> 일반전화<br>
+                    <input type="tel" name="phone_number" placeholder="031-000-0000" pattern="{2,3}-\d{3}-\d{4}" title="형식 031-000-0000 혹은 02-000-0000" autocomplete="on" class="box"></label>
+                </label>
+            </div>
+
+            <div>
+                <label> 휴대전화<br>
+                <input type="tel" name="phone_number" placeholder="010-0000-0000" pattern="(010)-\d{4}-\d{4}" title="형식 010-0000-0000" required="required" autocomplete="on" class="box"></label>
+            </div>
+
+            <div>
+                <label> e-mail<br>
+                <input type="text" name="email" required="required" autocomplete="on">
+                @<select name="도메인" required="required">
+                    <option value="" disabled selected>선택</option>
+                    <option value="daum">daum.net</option>
+                    <option value="hanmail">hanmail.net</option>
+                    <option value="gmail">gmail.com</option>
+                    <option value="nate">nate.com</option>
+                    <option value="naver">naver.com</option>
+                    <option value="yonsei">yonsei.ac.kr</option>
+                </select></label>
+            </div>
+
+            <div>
+                <label> 생년월일<br>
+                <input type="number" name="년도" placeholder="년(4자)"  step="1" required="required" step="1" min="1900" max="2023">
+                <select name="월" required="required">
+                    <option value="" disabled selected>월</option>
+                    <option value="1월">1월</option>
+                    <option value="2월">2월</option>
+                    <option value="3월">3월</option>
+                    <option value="4월">4월</option>
+                    <option value="5월">5월</option>
+                    <option value="6월">6월</option>
+                    <option value="7월">7월</option>
+                    <option value="8월">8월</option>
+                    <option value="9월">9월</option>
+                    <option value="10월">10월</option>
+                    <option value="11월">11월</option>
+                    <option value="12월">12월</option>
+                </select>
+                <input type="number" name="일" placeholder="일" required="required" step="1" min="1" max="31">
+                </label>
+            </div>
+
+            <div>
+                <label> 회원구분<br>
+                <input type="radio" name="user_type" value="indivisual" required="required">개인회원
+                <input type="radio" name="user_type" value="company">사업자회원
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="회원가입" class="box">
+            </div>
+        </form>
+    </body>
+</html>
